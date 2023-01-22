@@ -15,6 +15,8 @@ connectDB();
 app.use(cors());
 app.use(bodyParser.json());
 
+const hostname = "0.0.0.0";
+
 app.get("/", (req, res) => {
   res.send("this is the chat app");
 });
@@ -273,7 +275,7 @@ app.get("/api/getmessages/:chatId", async (req, res) => {
 
 //----------------------------Deployment-----------------------
 
-const server = app.listen(3001, () => {
+const server = app.listen(3001, hostname, () => {
   console.log("app is running");
 });
 
