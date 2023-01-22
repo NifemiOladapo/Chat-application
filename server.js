@@ -275,7 +275,7 @@ app.get("/api/getmessages/:chatId", async (req, res) => {
 
 //----------------------------Deployment-----------------------
 
-const server = app.listen(3001, hostname, () => {
+const server = app.listen(3001, () => {
   console.log("app is running");
 });
 
