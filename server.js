@@ -44,7 +44,7 @@ app.post("/api/register", async (req, res) => {
       username: user.username,
       email: user.email,
       profilePicture: user.profilePicture,
-      _id: user._id,
+      id: user._id,
       token: generateToken(user._id),
     });
   } else {
