@@ -282,7 +282,7 @@ const server = app.listen(3001, () => {
 const io = new Server(server, {
   pingTimeout: 60000,
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://chatfastnow.netlify.app",
   },
 });
 
